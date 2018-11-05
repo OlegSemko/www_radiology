@@ -1,4 +1,26 @@
-p {
+table {
     background-color: azure;
-    color: brown;
+    color: rgb(54, 3, 3);
+    margin: 50px auto;
+}
+td {
+    padding: 5px;
+}
+input {
+    width: 50px;
+}
+p {
+    color: darkblue;
+}
+h2 {
+    text-align: center;
+}
+a {
+    background-color: blue;
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+}
+body {
+    font-size: 20px;
 }

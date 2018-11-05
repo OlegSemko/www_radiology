@@ -24,9 +24,9 @@ jQuery('document').ready(function(){
         s_kidn=0.785*height_kidney*width_kidney;
         s_chms=(width_chms*height_chms*height_pelv)/(0.5*(width_chms+height_chms));
         rki=s_chms/s_kidn;
-        jQuery('body').append('<p>Square of kidney is - ' + s_kidn.toFixed(2) + 'cm<sup>2</sup></p>' + 
-            '<p>Square of collect system is - ' + s_chms.toFixed(2) + 'cm<sup>2</sup></p>' +
-            '<p>RKI is - ' + rki.toFixed(2) + '</p><hr>');
+        jQuery('body').append('<p>Площа нирки - ' + s_kidn.toFixed(2) + 'см<sup>2</sup></p>' + 
+            '<p>Площа ЧМС - ' + s_chms.toFixed(2) + 'см<sup>2</sup></p>' +
+            '<p>RKI - ' + rki.toFixed(2) + '</p><hr>');
         function inrange(x, min, max) {
             return x >= min && x <= max;
           }
@@ -39,7 +39,7 @@ jQuery('document').ready(function(){
           
             
             {
-                jQuery('body').append('<p>Renal hypoplasia</p><hr>');    
+                jQuery('body').append('<p>Нирка зменшена</p><hr>');    
             }
             
             if (inrange(age, 0, 4) && s_kidn>31.6 ||
@@ -50,7 +50,7 @@ jQuery('document').ready(function(){
           
             
             {
-                jQuery('body').append('<p>Hyperplasia of kidney</p><hr>');    
+                jQuery('body').append('<p>Нирка розширена</p><hr>');    
             }
             if (inrange(age, 0, 3) && s_chms>2 ||
             inrange(age, 3, 5) && s_chms>3.5 ||
@@ -60,7 +60,7 @@ jQuery('document').ready(function(){
           
             
             {
-                jQuery('body').append('<p>Pyelectasis</p><hr>');    
+                jQuery('body').append('<p>Пієлоектазія</p><hr>');    
             }
                   
     });
